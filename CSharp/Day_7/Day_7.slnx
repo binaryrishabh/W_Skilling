@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="1_Searching_Sorting_Algorithms/1_Searching_Sorting_Algorithms.csproj" />
-  <Project Path="3_Indexing/3_Indexing.csproj" />
+  <Project Path="3_Indexing/3_Indexing.csproj" Id="c68a9b0f-26a7-420a-a5a6-4fb8da48f942" />
   <Project Path="4_Indexers_Properties/4_Indexers_Properties.csproj" />
+  <Project Path="5_FileHandling/5_FileHandling.csproj" Id="cd0c155e-aecf-461a-859b-4d8bc881049e" />
 </Solution>

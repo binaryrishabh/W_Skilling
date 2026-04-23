@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("2_Stop_Watch")]
+[assembly: AssemblyTitle("2_StudentActivityEvaluationSystem_Pract_ Dele_Anony_Meth_Lam_Exp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("2_Stop_Watch")]
+[assembly: AssemblyProduct("2_StudentActivityEvaluationSystem_Pract_ Dele_Anony_Meth_Lam_Exp")]
 [assembly: AssemblyCopyright("Copyright ©  2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("146d13ee-2b53-489b-b6c8-73a3d012bdc0")]
+[assembly: Guid("797c06ea-405d-447a-9e26-fb51812b872c")]
 
 // Version information for an assembly consists of the following four values:
 //

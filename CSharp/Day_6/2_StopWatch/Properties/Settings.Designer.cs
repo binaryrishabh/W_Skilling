@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _2_Stop_Watch.Properties {
+namespace _2_StopWatch.Properties {
 
 
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

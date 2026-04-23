@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _2_Stop_Watch {
+namespace _2_StopWatch {
     internal static class Program {
         /// <summary>
         /// The main entry point for the application.

@@ -1,4 +1,3 @@
 <Solution>
-  <Project Path="1_CSharp_Advanced_Features/1_CSharp_Advanced_Features.csproj" />
-  <Project Path="2_Top_10-Features_Of_7_8_Version_CSharp/2_Top_10-Features_Of_7_8_Version_CSharp.csproj" />
+  <Project Path="3_CSharp_ExceptionHandling_CaseStudy_Assignment/3_CSharp_ExceptionHandling_CaseStudy_Assignment.csproj" />
 </Solution>

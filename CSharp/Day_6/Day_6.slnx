@@ -1,1 +1,4 @@
-<Solution />
+<Solution>
+  <Project Path="2_StopWatch/2_StopWatch.csproj" Id="a2c7c8db-c0fc-4a26-b99f-939fd3c58f84" />
+  <Project Path="4_Real_Time_Order_Notification_System/4_Real_Time_Order_Notification_System.csproj" Id="fd4086b0-e670-47b4-8885-43ab431a0238" />
+</Solution>

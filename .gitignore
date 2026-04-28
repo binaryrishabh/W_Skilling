@@ -1,6 +1,7 @@
-#Visual Studio
+# Visual Studio
 .vs/
-*.suo*.user
+*.suo
+*.user
 *.userosscache
 .sln.docstates
 
@@ -11,3 +12,20 @@ obj/
 # Others
 *.log
 *.cache
+
+# Add these:
+# Rider (if used)
+.idea/
+
+# VS Code
+.vscode/
+
+# Package folders
+packages/
+*.nupkg
+
+# Test results
+TestResults/
+
+# Publish output
+/publish/

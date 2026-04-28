@@ -1,13 +1,13 @@
 # .NET Core & ASP.NET Core - Practice Activities
 
-	## What is asked? 
+	# What is asked? 
 
 		1. Build a simple Razor Pages application
 		2. Implement form handling using POST
 		3. Serve static files
 		4. Explore middleware customization
 
-	## What we will do?
+	# What we will do?
 
 		### Activity 1: Build a simple Razor Pages application
 			- Create a new Razor Pages project using `dotnet new webapp`

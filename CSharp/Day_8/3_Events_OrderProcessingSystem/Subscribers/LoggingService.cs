@@ -1,7 +1,5 @@
 ﻿using _3_Events_OrderProcessingSystem.EventArgs;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 
 namespace _3_Events_OrderProcessingSystem.Subscribers {
     public class LoggingService {

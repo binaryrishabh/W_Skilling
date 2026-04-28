@@ -1,9 +1,5 @@
-﻿
-using _3_Events_OrderProcessingSystem.EventArgs;
+﻿using _3_Events_OrderProcessingSystem.EventArgs;
 using _3_Events_OrderProcessingSystem.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _3_Events_OrderProcessingSystem.Publisher {
     // Define the delegate for the event

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _3_Events_OrderProcessingSystem.Models {
+﻿namespace _3_Events_OrderProcessingSystem.Models {
     public class Order {
         public int OrderId { get; set; }
         public string CustomerName { get; set; }

@@ -1,1 +1,10 @@
-<Solution />
+<Solution>
+  <Project Path="1_Anonymous_Methods_And_Lambda_Expressions/1_Anonymous_Methods_And_Lambda_Expressions.csproj" />
+  <Project Path="2_Student_Evaluation_System/2_Student_Evaluation_System.csproj" Id="9c1ce792-484b-44b3-aa85-54fb15736b27" />
+  <Project Path="3_Events_OrderProcessingSystem/3_Events_OrderProcessingSystem.csproj" Id="77e2dc30-a77b-4f31-9d60-4d5a5083f00f" />
+  <Project Path="4_Generics/4_Generics.csproj" Id="d6dff385-d156-4a44-928b-a899388bae0e" />
+  <Project Path="5_ReflectionORM/5_ReflectionORM.csproj" Id="e466024c-8879-4590-8ac7-96fcf09fad5c" />
+  <Project Path="6_ReportingService/6_ReportingService.csproj" Id="f46c711b-abfb-4114-bd25-fe6fb6c7b143" />
+  <Project Path="7_Financial_Transaction_System/7_Financial_Transaction_System.csproj" Id="98160cdb-6002-4939-b9bb-af000b97ec14" />
+  <Project Path="8_Async_Await_Data_Dashboard/8_Async_Await_Data_Dashboard.csproj" Id="20178411-9d26-4498-baa0-460c7252f08f" />
+</Solution>

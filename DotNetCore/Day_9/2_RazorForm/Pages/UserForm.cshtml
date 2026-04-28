@@ -1,0 +1,14 @@
+﻿@page
+@model _2_RazorForm.Pages.UserFormModel
+
+<h2>Enter Your Name</h2>
+
+<form method="post">
+    <input type="text" asp-for="FirstName" placeholder="Indian Name" required />
+    <button type="submit">Submit</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.SubmittedName))
+{
+    <h3>Hello @Model.SubmittedName!</h3>
+}

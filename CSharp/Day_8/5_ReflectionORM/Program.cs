@@ -5,36 +5,29 @@ using _5_ReflectionORM.ORM;
 namespace _5_ReflectionORM {
     class Program {
         static void Main() {
-            Console.WriteLine("=== Custom ORM Using Reflection ===\n");
-
             var orm = new SimpleORM();
-            var student = new Student
-            {
-                Id = 1,
-                Name = "Raj",
-                Age = 20,
-                City = "Mumbai"
-            };
 
-            // Generate SQL queries dynamically
-            string selectSql = orm.GenerateSelectQuery<Student>("Students");
-            string insertSql = orm.GenerateInsertQuery(student, "Students");
-            string updateSql = orm.GenerateUpdateQuery(student, "Students", 1);
+            // Indian first names only
+            var s1 = new Student { Id = 1, Name = "Aarav", Age = 20, City = "Mumbai" };
+            var s2 = new Student { Id = 2, Name = "Diya", Age = 21, City = "Delhi" };
+            var s3 = new Student { Id = 3, Name = "Rohan", Age = 19, City = "Pune" };
 
-            // Display results
-            Console.WriteLine("[SELECT Query]");
-            Console.WriteLine(selectSql + "\n");
+            Console.WriteLine("=== ORM Demo ===\n");
 
-            Console.WriteLine("[INSERT Query]");
-            Console.WriteLine(insertSql + "\n");
+            // SELECT
+            Console.WriteLine($"SELECT: {orm.GenerateSelectQuery<Student>("Students")}\n");
 
-            Console.WriteLine("[UPDATE Query]");
-            Console.WriteLine(updateSql + "\n");
+            // INSERT
+            Console.WriteLine($"INSERT ({s1.Name}): {orm.GenerateInsertQuery(s1, "Students")}\n");
+            Console.WriteLine($"INSERT ({s2.Name}): {orm.GenerateInsertQuery(s2, "Students")}\n");
 
-            Console.WriteLine("Property Inspection:");
-            foreach (var prop in typeof(Student).GetProperties()) {
-                Console.WriteLine($"- {prop.Name} : {prop.PropertyType.Name}");
-            }
+            // UPDATE
+            Console.WriteLine($"UPDATE ({s3.Name}): {orm.GenerateUpdateQuery(s3, "Students", 3)}\n");
+
+            // Property inspection
+            Console.WriteLine("Properties:");
+            foreach (var p in typeof(Student).GetProperties())
+                Console.Write($"{p.Name} ");
         }
     }
 }

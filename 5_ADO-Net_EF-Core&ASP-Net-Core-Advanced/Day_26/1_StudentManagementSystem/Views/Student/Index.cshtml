@@ -1,0 +1,27 @@
+﻿@model IEnumerable<_1_StudentManagementSystem.Models.Student>
+
+<h2>Student List</h2>
+
+<a href="/Student/Create">Add New Student</a>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Age</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var s in Model) {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.Name</td>
+            <td>@s.Course</td>
+            <td>@s.Age</td>
+            <td>
+                <a href="/Student/Edit/@s.Id">Edit</a> |
+                <a href="/Student/Delete/@s.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

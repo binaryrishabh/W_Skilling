@@ -1,7 +1,7 @@
 
 # .NET Core & ASP.NET Core - Practice Activities
 
-	# What is asked? 
+	What is asked? 
 
 		1. Build a simple Razor Pages application
 		2. Implement form handling using POST

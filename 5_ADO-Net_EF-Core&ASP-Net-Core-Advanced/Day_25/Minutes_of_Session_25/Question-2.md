@@ -1,17 +1,11 @@
 Q- 
-A company named SmartMart Retail already has an existing SQL Server database for managing products and customers. 
-The development team needs to build an ASP.NET Core MVC application using the existing database without creating 
-tables manually from code. The application should: Connect with the existing SQL Server database, Automatically 
-generate models from database tables, Perform CRUD operations, Reduce manual coding effort, Quickly start 
-development using Visual Studio. What are the steps to get started with the Database First approach?
+A company named SmartMart Retail already has an existing SQL Server database for managing products and customers. The development team needs to build an ASP.NET Core MVC application using the existing database without creating tables manually from code. The application should: Connect with the existing SQL Server database, Automatically generate models from database tables, Perform CRUD operations, Reduce manual coding effort, Quickly start development using Visual Studio. What are the steps to get started with the Database First approach?
 
 
 Ans-
 ## Steps to Get Started with Database First Approach in ASP.NET Core MVC
 
-The Database First approach is used when the database already exists and the application needs to be developed based on that database. 
-In the case of SmartMart Retail, the company already has a SQL Server database for managing products and customers, so this approach 
-will help in reducing manual coding and speeding up development.
+The Database First approach is used when the database already exists and the application needs to be developed based on that database. In the case of SmartMart Retail, the company already has a SQL Server database for managing products and customers, so this approach will help in reducing manual coding and speeding up development.
 
 ### Step 1: Create a New ASP.NET Core MVC Project
 
@@ -93,7 +87,5 @@ The ASP.NET Core MVC application will now:
 
 ### Conclusion
 
-Using the Database First approach is very useful when the database already exists. It helps developers save time by 
-automatically generating models and CRUD functionality from the database. In the SmartMart Retail project, this approach 
-allows quick development with less manual work and easy integration with SQL Server using Visual Studio.
+Using the Database First approach is very useful when the database already exists. It helps developers save time by automatically generating models and CRUD functionality from the database. In the SmartMart Retail project, this approach allows quick development with less manual work and easy integration with SQL Server using Visual Studio.
 

@@ -1,0 +1,99 @@
+Q- 
+A company named SmartMart Retail already has an existing SQL Server database for managing products and customers. 
+The development team needs to build an ASP.NET Core MVC application using the existing database without creating 
+tables manually from code. The application should: Connect with the existing SQL Server database, Automatically 
+generate models from database tables, Perform CRUD operations, Reduce manual coding effort, Quickly start 
+development using Visual Studio. What are the steps to get started with the Database First approach?
+
+
+Ans-
+## Steps to Get Started with Database First Approach in ASP.NET Core MVC
+
+The Database First approach is used when the database already exists and the application needs to be developed based on that database. 
+In the case of SmartMart Retail, the company already has a SQL Server database for managing products and customers, so this approach 
+will help in reducing manual coding and speeding up development.
+
+### Step 1: Create a New ASP.NET Core MVC Project
+
+First, open **Visual Studio** and create a new project.
+
+* Select **ASP.NET Core Web App (Model-View-Controller)**.
+* Give the project a suitable name.
+* Choose the required .NET version and click **Create**.
+
+### Step 2: Install Required NuGet Packages
+
+To connect ASP.NET Core with SQL Server and generate models automatically, install the following packages using NuGet Package Manager:
+
+* Microsoft.EntityFrameworkCore.SqlServer
+* Microsoft.EntityFrameworkCore.Tools
+* Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+These packages help in database connectivity, scaffolding, and CRUD generation.
+
+### Step 3: Configure Database Connection
+
+Open the `appsettings.json` file and add the SQL Server connection string.
+
+Example:
+
+"ConnectionStrings": {
+  "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=SmartMartDB;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+
+
+This connection string allows the application to connect with the existing SmartMart Retail database.
+
+### Step 4: Generate Models from Existing Database
+
+Use the **Scaffold-DbContext** command in Package Manager Console to automatically generate models and DbContext from database tables.
+
+Command:
+Scaffold-DbContext "Server=YOUR_SERVER_NAME;Database=SmartMartDB;Trusted_Connection=True;TrustServerCertificate=True;" 
+Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+After running this command:
+
+* Entity classes for tables like Products and Customers are created automatically.
+* A DbContext class is also generated.
+* No need to manually create tables or models.
+
+### Step 5: Build CRUD Operations Using Scaffolding
+
+Visual Studio provides scaffolding support to quickly generate CRUD pages.
+
+Steps:
+
+* Right-click on the **Controllers** folder.
+* Select **Add → New Scaffolded Item**.
+* Choose **MVC Controller with views, using Entity Framework**.
+* Select the model class and DbContext.
+* Click **Add**.
+
+Visual Studio will automatically generate:
+
+* Controller
+* Create View
+* Read/View List Page
+* Update Page
+* Delete Page
+
+This reduces development time and manual coding effort.
+
+### Step 6: Run and Test the Application
+
+Finally, run the application.
+
+The ASP.NET Core MVC application will now:
+
+* Connect with the existing SQL Server database
+* Display data from tables
+* Perform CRUD operations
+* Automatically use generated models and controllers
+
+### Conclusion
+
+Using the Database First approach is very useful when the database already exists. It helps developers save time by 
+automatically generating models and CRUD functionality from the database. In the SmartMart Retail project, this approach 
+allows quick development with less manual work and easy integration with SQL Server using Visual Studio.
+

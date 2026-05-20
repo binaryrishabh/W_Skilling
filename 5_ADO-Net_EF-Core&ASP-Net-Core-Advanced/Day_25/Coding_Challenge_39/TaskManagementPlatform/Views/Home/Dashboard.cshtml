@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Dashboard";
+    var user = await UserManager.GetUserAsync(User);
+    var roles = await UserManager.GetRolesAsync(user);
+}
+
+<h2>Welcome @User.Identity.Name</h2>
+
+<p><strong>First Name:</strong> @user?.FirstName</p>
+
+<p><strong>Role:</strong> @string.Join(", ", roles)</p>
+
+<p><strong>Email/Username:</strong> @User.Identity.Name</p>
+
+<hr />
+
+<h3>Navigation</h3>
+<ul>
+    @if (roles.Contains("Admin")) {
+        <li><a href="/Admin/ManageTasks">Manage Tasks (Admin)</a></li>
+    }
+    @if (roles.Contains("User")) {
+        <li><a href="/User/TaskList">My Tasks (User)</a></li>
+    }
+</ul>
+
+<hr />
+
+<form method="post" asp-action="Logout" asp-controller="Account">
+    @Html.AntiForgeryToken()
+    <button type="submit" style="color:red">Logout</button>
+</form>

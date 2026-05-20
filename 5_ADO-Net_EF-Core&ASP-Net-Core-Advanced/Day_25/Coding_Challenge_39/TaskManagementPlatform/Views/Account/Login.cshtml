@@ -1,0 +1,8 @@
+﻿@model TaskManagementPlatform.Models.LoginViewModel
+<form method="post" asp-action="Login" asp-controller="Account">
+    @Html.AntiForgeryToken()
+    <input asp-for="Username" placeholder="Username" />
+    <input asp-for="Password" type="password" placeholder="Password" />
+    <button type="submit">Login</button>
+    <a asp-action="Register">Register</a>
+</form>

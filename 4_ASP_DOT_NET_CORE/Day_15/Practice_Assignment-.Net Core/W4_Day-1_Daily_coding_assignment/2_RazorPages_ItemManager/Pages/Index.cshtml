@@ -1,0 +1,29 @@
+﻿@page
+@model _2_RazorPages_ItemManager.Pages.IndexModel
+@{
+    ViewData["Title"] = "Item List";
+}
+
+<h2>📦 Item List</h2>
+
+@if (Model.Items.Any())
+{
+    <table border="1" cellpadding="8" style="border-collapse: collapse;">
+        <thead>
+            <tr><th>ID</th><th>Item Name</th><th>Owner</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                <tr><td>@item.Id</td><td>@item.Name</td><td>@item.OwnerName</td></tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No items found.</p>
+}
+
+<br />
+<a href="/AddItem">➕ Add New Item</a>

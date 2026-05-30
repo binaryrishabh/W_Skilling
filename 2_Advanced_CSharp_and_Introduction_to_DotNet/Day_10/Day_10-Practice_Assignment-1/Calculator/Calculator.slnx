@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Readme.md" />
+  </Folder>
+  <Project Path="CalculatorLib.Tests/CalculatorLib.Tests.csproj" />
+  <Project Path="CalculatorLib/CalculatorLib.csproj" />
+</Solution>

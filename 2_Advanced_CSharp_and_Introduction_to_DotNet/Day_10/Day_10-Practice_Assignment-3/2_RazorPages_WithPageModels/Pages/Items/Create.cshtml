@@ -1,0 +1,9 @@
+﻿@page
+@model _2_RazorPages_WithPageModels.Pages.Items.CreateModel
+<h2>Add New Item</h2>
+<form method="post">
+    Name: <input asp-for="NewItem.Name" /><br />
+    Added By: <input asp-for="NewItem.AddedBy" /><br />
+    <button type="submit">Save</button>
+</form>
+<a href="/Items/Index">Back to List</a>

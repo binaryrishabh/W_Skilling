@@ -1,0 +1,27 @@
+﻿@page
+@model _2_RazorPages_ItemManager.Pages.AddItemModel
+@{
+    ViewData["Title"] = "Add New Item";
+}
+
+<h2>➕ Add New Item</h2>
+
+<form method="post">
+    <div>
+        <label>Item Name:</label><br />
+        <input asp-for="NewItem.Name" required />
+    </div>
+    <br />
+    <div>
+        <label>Owner Name (Indian name):</label><br />
+        <input asp-for="NewItem.OwnerName" required />
+    </div>
+    <br />
+    <button type="submit">Save Item</button>
+    <a href="/">Cancel</a>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <p style="color:green">@Model.SuccessMessage</p>
+}

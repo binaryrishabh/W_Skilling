@@ -1,0 +1,38 @@
+﻿@model _2_MvcModelBinding.Models.User
+
+<h2>Register User</h2>
+
+<form asp-action="Create" method="post">
+    <h3>Personal Details</h3>
+    <label>First Name:</label>
+    <input asp-for="FirstName" required />
+    <span asp-validation-for="FirstName"></span>
+    <br/><br/>
+
+    <label>Last Name:</label>
+    <input asp-for="LastName" required />
+    <br/><br/>
+
+    <label>Age:</label>
+    <input asp-for="Age" type="number" required />
+    <br/><br/>
+
+    <h3>Address (Nested Model)</h3>
+    <label>Street:</label>
+    <input asp-for="Address.Street" required />
+    <br/><br/>
+
+    <label>City:</label>
+    <input asp-for="Address.City" required />
+    <br/><br/>
+
+    <label>Zip Code:</label>
+    <input asp-for="Address.ZipCode" required />
+    <br/><br/>
+
+    <button type="submit">Submit</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

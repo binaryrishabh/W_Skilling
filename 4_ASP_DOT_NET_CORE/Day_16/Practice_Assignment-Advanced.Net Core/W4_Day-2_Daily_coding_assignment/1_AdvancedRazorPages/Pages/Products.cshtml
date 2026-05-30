@@ -1,0 +1,17 @@
+﻿@page "{id?}"
+@model _1_AdvancedRazorPages.Pages.ProductsModel
+
+<h2>Add New Product</h2>
+<form method="post">
+    <input asp-for="NewProduct.ProductID" placeholder="ID" />
+    <input asp-for="NewProduct.Name" placeholder="Name" />
+    <input asp-for="NewProduct.Description" placeholder="Description" />
+    <h4>Categories (comma separated)</h4>
+    <input asp-for="CategoriesInput" placeholder="e.g., Electronics, Mobile" />
+    <button type="submit">Add Product</button>
+</form>
+
+<h2>Product List</h2>
+@foreach (var product in Model.Products) {
+    <partial name="_ProductSummary" model="product" />
+}
